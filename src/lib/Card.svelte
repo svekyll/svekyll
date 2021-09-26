@@ -4,9 +4,9 @@
 	export let path;
 </script>
 
-<div class="card">
+<div class="card bordered">
 	{#if path}
-		<a sveltekit:prefetch href={path.replace(/\.[^/.]+$/, '')}><div class="title">{title}</div></a>
+		<a class="card-title" sveltekit:prefetch href={path.replace(/\.[^/.]+$/, '')}><div class="title">{title}</div></a>
 	{:else}
 		<div class="card-title">{title}</div>
 	{/if}

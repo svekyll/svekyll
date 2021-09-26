@@ -1,3 +1,8 @@
+const layout = {
+  _: './src/layouts/blog.svelte',
+  'resume': './src/layouts/resume.svelte'
+}
+
 const config = {
   "extensions": [".svelte.md", ".md", ".svx"],
 
@@ -6,7 +11,8 @@ const config = {
   },
 
   "remarkPlugins": [],
-  "rehypePlugins": []
+  "rehypePlugins": [],
+  layout,
 };
 
 export default config;

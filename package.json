@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"daisyui": "^1.14.1",
 		"svelte-paginate": "^0.0.1"
 	}
 }

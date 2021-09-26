@@ -142,6 +142,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
+  integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
+
 acorn-jsx@^5.3.1:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -559,6 +564,11 @@ csso@^4.2.0:
   integrity sha512-wvlcdIbf6pwKEk7vHj8/Bkc0B4ylXZruLvOgs9doS5eOsOpuodOV2zJChSpkp+pRpYQLQMeF04nr3Z68Sta9jA==
   dependencies:
     css-tree "^1.1.2"
+
+daisyui@^1.14.1:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.14.1.tgz#8f67bf72034e2c4f56a170c072ca23810ecb3d52"
+  integrity sha512-Ou+rAJAcDByUDIcHfBWCv6o9dBUVAyZBJUIoBXR/c+o7kZIkGcR15JPIw6LJmyojhJP594xnuXNIe0I+fcQ+3A==
 
 debug@^4.0.1, debug@^4.1.1, debug@^4.3.2:
   version "4.3.2"

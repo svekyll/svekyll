@@ -34,7 +34,7 @@
     {#if paginatedItems && paginatedItems.length }
     <div class="article-list">
       <div
-        class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12"
+        class="container mx-auto px-6 grid grid-cols-1 gap-12"
       >
         {#each paginatedItems as { datestamp, readingTime, metadata: { title, tags, outline, slug }, path }}
           <Card {title} {path}>
@@ -47,7 +47,7 @@
         {/each}
       </div>
     </div>
-    <div class="mx-auto">
+    <div class="mx-auto w-full pagenav">
       <PaginationNav
         totalItems={items.length}
         {pageSize}
@@ -66,7 +66,8 @@
 </main>
 
 <style>
-  .article-list {
-    @apply bg-white;
+  .pagenav :global(.pagination-nav) {
+    @apply flex justify-center;
   }
 </style>
+
