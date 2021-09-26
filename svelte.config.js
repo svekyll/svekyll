@@ -8,7 +8,8 @@ try {
 } catch (err) {
     console.log('Unable to process _config.yml, skipping (you may not have a _config.yml and that is fine)');
 }
-// console.log("ENV: ", JSON.stringify(process.env));
+
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
