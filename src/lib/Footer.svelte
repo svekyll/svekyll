@@ -7,7 +7,6 @@ let found = false
 
 try {
 	({ twitter, github } = config);
-	console.log('Title and description are: ', twitter, github);
 
 } catch (err) {
 	console.log(

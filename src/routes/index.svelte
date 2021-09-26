@@ -25,7 +25,6 @@
   let pageSize = 10;
   let paginatedItems;
   $: { 
-    console.log('Items', items);
     paginatedItems = paginate({ items, pageSize, currentPage }) 
   };
 </script>
