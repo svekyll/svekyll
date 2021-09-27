@@ -29,7 +29,6 @@
 					s = d.getElementsByTagName('script')[0];
 				g.async = true;
 				g.src = u + 'matomo.js';
-				conf;
 				s.parentNode.insertBefore(g, s);
 			})();
 		}
