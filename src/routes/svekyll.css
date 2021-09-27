@@ -1,0 +1,46 @@
+
+.svekyll-posts {
+    @apply p-6 
+        grid 
+        grid-cols-1 
+        gap-12 
+        lg:grid-cols-2;
+}
+
+.svekyll-title {
+    @apply p-8;
+}
+
+.svekyll-post {
+    @apply p-2
+    lg:p-6;
+}
+
+.pagenav  .pagination-nav {
+    @apply flex justify-center;
+}
+
+.svekyll-post p {
+    @apply py-8;
+}
+
+.svekyll-post pre {
+    @apply mockup-code;
+    /* font-size: 0.8rem;
+    font-family: monospace;
+    @apply p-4;
+    background-color: white;
+    overflow: scroll; */
+}
+
+h1 {
+    @apply text-2xl;
+}
+
+h2 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-lg;
+}

@@ -16,8 +16,11 @@
 
 <script>
   import { paginate, PaginationNav } from "svelte-paginate";
+  import { setTheme } from '$lib/theme';
   import Card from "$lib/Card.svelte";
   import Footer from "$lib/Footer.svelte";
+  import { onMount } from "svelte";
+  import { config } from "$lib/config";
   export let posts;
 
   let items = posts;
@@ -27,6 +30,11 @@
   $: { 
     paginatedItems = paginate({ items, pageSize, currentPage }) 
   };
+
+  onMount( () => {
+    setTheme(config.theme);
+  })
+
 </script>
 
 <main>
@@ -34,7 +42,7 @@
     {#if paginatedItems && paginatedItems.length }
     <div class="article-list">
       <div
-        class="container mx-auto px-6 grid grid-cols-1 gap-12"
+        class="container mx-auto svekyll-posts"
       >
         {#each paginatedItems as { datestamp, readingTime, metadata: { title, tags, outline, slug }, path }}
           <Card {title} {path}>
@@ -66,8 +74,6 @@
 </main>
 
 <style>
-  .pagenav :global(.pagination-nav) {
-    @apply flex justify-center;
-  }
+
 </style>
 

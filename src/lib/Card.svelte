@@ -4,12 +4,14 @@
 	export let path;
 </script>
 
-<div class="card bordered">
-	{#if path}
+<div class="card bordered svekyll-post">
+	<div class="svekyll-title">
+  {#if path}
 		<a class="card-title" sveltekit:prefetch href={path.replace(/\.[^/.]+$/, '')}><div class="title">{title}</div></a>
 	{:else}
 		<div class="card-title">{title}</div>
 	{/if}
+  </div>
 
 	<div class="card-body">
 		{#if image}
