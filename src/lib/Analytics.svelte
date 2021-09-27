@@ -13,14 +13,17 @@
 	}
 
 	onMount(() => {
-		if (config.analytics && config.analytics.matomo) {
+		if (config.analytics && 
+				config.analytics.matomo && 
+				config.analytics.matomo.url && 
+				config.analytics.matomo.site_id) {
 			var _paq = (window._paq = window._paq || []);
 			_paq.push(['trackPageView']);
 			_paq.push(['enableLinkTracking']);
 			(function () {
 				var u = fixHost(config.analytics.matomo.url);
 				_paq.push(['setTrackerUrl', u + 'matomo.php']);
-				_paq.push(['setSiteId', config.analyics.matomo.site_id]);
+				_paq.push(['setSiteId', config.analytics.matomo.site_id]);
 				var d = document,
 					g = d.createElement('script'),
 					s = d.getElementsByTagName('script')[0];
