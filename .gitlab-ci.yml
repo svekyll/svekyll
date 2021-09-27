@@ -1,0 +1,14 @@
+image: node:latest
+
+pages:
+  image: registry.public.do/svekyll:latest
+  only:
+    - master
+  script:
+    - npm install
+    - yarn build
+    - rm -rf public
+    - mv build public
+  artifacts:
+    paths:
+    - public
