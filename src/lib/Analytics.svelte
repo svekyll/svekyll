@@ -13,7 +13,7 @@
 	}
 
 	onMount(() => {
-		if (config.analytics && 
+		if (config && config.analytics && 
 				config.analytics.matomo && 
 				config.analytics.matomo.url && 
 				config.analytics.matomo.site_id) {
