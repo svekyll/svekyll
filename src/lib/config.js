@@ -1,5 +1,5 @@
 
-let config;
+let config = {};
 let contributors;
 
 try {
