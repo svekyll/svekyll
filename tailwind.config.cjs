@@ -1,8 +1,13 @@
 const config = {
 	mode: "jit",
-	purge: [
-		"./src/**/*.{html,js,svelte,ts}",
-	],
+	purge: {
+		content: [ "./src/**/*.{html,js,svelte,ts}" ],
+		options: {
+			safelist: [
+			  /data-theme$/,
+			]
+		  },
+		},
 	theme: {
 		extend: {},
 	},
